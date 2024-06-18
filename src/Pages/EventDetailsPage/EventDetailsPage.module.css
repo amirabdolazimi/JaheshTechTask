@@ -1,0 +1,96 @@
+.contest {
+  padding: 30px 0;
+}
+.jahesh svg {
+  width: 25px;
+  height: 25px;
+}
+.eventsSection {
+  padding: 25px 15px;
+  background-color: #f9fafb;
+}
+.events {
+  display: flex;
+  margin-top: 24px;
+}
+.videoSection {
+  padding: 0 15px;
+}
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #252c30;
+  padding: 15px;
+  margin: 30px 0;
+}
+.description svg {
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.video {
+  overflow: hidden;
+  margin: 20px 0;
+}
+.video video {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+.accordions {
+  margin-bottom: 40px;
+}
+
+.jahesh h2 {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .contest {
+    margin: 0 auto;
+    background-color: #f9fafb;
+  }
+  .eventsSection {
+    padding: 30px 60px;
+  }
+  .events {
+    position: relative;
+  }
+  .eventsSection > .jahesh {
+    display: none;
+  }
+  .jahesh {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 20px;
+  }
+  .jahesh svg {
+    width: 25px;
+    height: 25px;
+  }
+  .description {
+    padding: 15px 60px;
+    width: 50%;
+    margin: 30px 0;
+  }
+  .description svg {
+    padding: 0;
+  }
+  .videoSection {
+    width: 50%;
+    margin: 30px 0;
+    padding: 15px 60px;
+  }
+  .accordions {
+    width: 50%;
+    padding: 0px 60px;
+  }
+  .description,
+  .videoSection {
+    font-size: 18px;
+  }
+  .jahesh h2 {
+    display: block;
+  }
+}

@@ -1,0 +1,46 @@
+.accordion {
+  margin-bottom: 25px 0;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 15px;
+}
+.accordion div {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.accordion p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  padding-right: 30px;
+  transition: all 0.6s ease-out;
+}
+.accordion div h4 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.accordion svg {
+  margin-left: 8px;
+}
+.show {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  /* invisible opacity-0 h-0" */
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion div h4 {
+    font-size: 20px;
+  }
+  .accordion p {
+    font-size: 18px;
+    width: 70%;
+  }
+}
