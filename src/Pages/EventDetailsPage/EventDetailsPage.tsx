@@ -7,7 +7,7 @@ import Accordion from "../../Components/Accordion/Accordion";
 import JaheshIcon from "../../Components/Icons/JaheshIcon";
 import HorizontalProgressBar from "../../Components/HorizontalProgressBar/HorizontalProgressBar";
 const EventDetailsPage = () => {
-  const EventsStepPassed = 2;
+  const EventsStepPassed = 4;
   return (
     <div className={classes.contest}>
       <section>
