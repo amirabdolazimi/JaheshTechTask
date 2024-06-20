@@ -4,7 +4,6 @@
   flex-direction: column;
   width: 100%;
   /* TODO : Should Rmove */
-  padding-bottom: 200px;
 }
 .header {
   margin-top: 20px;
