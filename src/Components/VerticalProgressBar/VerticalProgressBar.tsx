@@ -1,9 +1,5 @@
-import { PropsWithChildren } from "react";
 import classes from "./VerticalProgressBar.module.css";
-
-interface IVerticalProgressBar extends PropsWithChildren {
-  stepPassed: number;
-}
+import { IVerticalProgressBar } from "../../models/interface/interface";
 
 const VerticalProgressBar: React.FC<IVerticalProgressBar> = ({
   stepPassed,

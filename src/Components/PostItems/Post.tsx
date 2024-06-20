@@ -2,19 +2,21 @@ import EducationTrophyIcon from "../Icons/EducationTrophyIcon";
 import classes from "./post.module.css";
 import SubmitRate from "../SubmitRate/SubmitRate";
 import PostSlider from "../Slider/PostSlider";
+import { IPost } from "../../models/interface/interface";
 
-const Post = ({
-  isWinner,
-  personPicture,
-  personName,
-  postDate,
-  postDescription,
-  postTitle,
-  sliderContent,
-  setPosts,
-  posts,
-  id,
-}) => {
+const Post: React.FC<IPost> = (props) => {
+  const {
+    isWinner,
+    personPicture,
+    personName,
+    postDate,
+    postDescription,
+    postTitle,
+    sliderContent,
+    setPosts,
+    posts,
+    id,
+  } = props;
   return (
     <article className={classes.post}>
       {/* If Winner is => True */}

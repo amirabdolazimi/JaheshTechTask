@@ -3,7 +3,9 @@ import CarretLeftIcon from "../Icons/CarretLeftIcon";
 import CarretRightIcon from "../Icons/CarretRightIcon";
 import SliderIndicator from "./SliderIndicator";
 import classes from "./PostSlider.module.css";
-const PostSlider = ({ sliderContent }) => {
+import { IPostSlider } from "../../models/interface/interface";
+
+const PostSlider: React.FC<IPostSlider> = ({ sliderContent }) => {
   const [sliderIndex, setSliderIndex] = useState<number>(0);
 
   const handlePrevClick = () => {

@@ -1,12 +1,7 @@
 import classes from "./TabBar.module.css";
 import LayersIcon from "../Icons/LayersIcon";
 import FileIcon from "../Icons/FileIcon";
-import { Dispatch, PropsWithChildren, SetStateAction } from "react";
-
-interface ITabBar extends PropsWithChildren {
-  layerSelectedTab: Boolean;
-  setLayerSelectedTab: Dispatch<SetStateAction<boolean>>;
-}
+import { ITabBar } from "../../models/interface/interface";
 
 const TabBar: React.FC<ITabBar> = ({
   layerSelectedTab,

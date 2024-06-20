@@ -3,10 +3,12 @@ import FillStarIcon from "../Icons/FillStarIcon";
 import LeftArrowIcon from "../Icons/LeftArrowIcon";
 import OutlinedStarIcon from "../Icons/OutlinedStarIcon";
 import classes from "./SubmitRate.module.css";
-const SubmitRate = ({ setPosts, posts, postId }) => {
+import { ISubmitRate } from "../../models/interface/interface";
+
+const SubmitRate: React.FC<ISubmitRate> = ({ setPosts, posts, postId }) => {
   const [showStarModal, setShowStarModal] = useState<boolean>(false);
   const [rateValue, SetRateValue] = useState<number>(0);
-  const starsValue = ["1", "2", "3", "4", "5"];
+  const starsValue: string[] = ["1", "2", "3", "4", "5"];
 
   const updatedPosts = [...posts];
   const index = updatedPosts.findIndex((post) => post.id === postId);

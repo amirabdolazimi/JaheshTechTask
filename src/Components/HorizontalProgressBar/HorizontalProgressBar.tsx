@@ -1,10 +1,5 @@
-import { PropsWithChildren } from "react";
 import classes from "./HorizontalProgressBar.module.css";
-
-interface IHorizontalProgressBar extends PropsWithChildren {
-  stepPassed: number;
-}
-
+import { IHorizontalProgressBar } from "../../models/interface/interface";
 const HorizontalProgressBar: React.FC<IHorizontalProgressBar> = ({
   stepPassed,
 }) => {

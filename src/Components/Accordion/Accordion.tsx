@@ -3,7 +3,7 @@ import classes from "./Accordion.module.css";
 import PlusIcon from "../Icons/PlusIcon";
 import MinusIcon from "../Icons/MinusIcon";
 const Accordion = () => {
-  const [showAccordion, setShowAccordion] = useState<Boolean>(false);
+  const [showAccordion, setShowAccordion] = useState<boolean>(false);
 
   return (
     <div className={classes.accordion}>

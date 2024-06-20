@@ -1,12 +1,5 @@
-import { PropsWithChildren } from "react";
 import classes from "./EventStep.module.css";
-
-interface IEventStep extends PropsWithChildren {
-  eventTitle: string;
-  eventTime: string;
-  eventDate: string;
-}
-
+import { IEventStep } from "../../models/interface/interface";
 const EventStep: React.FC<IEventStep> = ({
   eventTime,
   eventTitle,

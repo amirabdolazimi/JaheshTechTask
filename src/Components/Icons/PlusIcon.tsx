@@ -1,9 +1,4 @@
-import { Dispatch, PropsWithChildren, SetStateAction } from "react";
-
-interface IPlusIcon extends PropsWithChildren {
-  handleClick: Dispatch<SetStateAction<Boolean>>;
-}
-
+import { IPlusIcon } from "../../models/interface/interface";
 const PlusIcon: React.FC<IPlusIcon> = ({ handleClick }) => {
   return (
     <svg

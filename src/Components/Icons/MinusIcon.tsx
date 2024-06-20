@@ -1,8 +1,5 @@
-import { Dispatch, PropsWithChildren, SetStateAction } from "react";
+import { IMinusIcon } from "../../models/interface/interface";
 
-interface IMinusIcon extends PropsWithChildren {
-  handleClick: Dispatch<SetStateAction<Boolean>>;
-}
 const MinusIcon: React.FC<IMinusIcon> = ({ handleClick }) => {
   return (
     <svg

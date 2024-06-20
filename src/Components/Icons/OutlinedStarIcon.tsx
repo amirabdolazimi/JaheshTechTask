@@ -1,15 +1,9 @@
-import { Dispatch, SetStateAction } from "react";
+import { IOutlinedStarIcon } from "../../models/interface/interface";
 
-interface IOutlinedStarIcon {
-  value: string;
-  handleRateValue: Dispatch<SetStateAction<number>>;
-  handleShowModal: Dispatch<SetStateAction<boolean>>;
-}
 const OutlinedStarIcon: React.FC<IOutlinedStarIcon> = ({
   value,
   handleRateValue,
   handleShowModal,
-  setPosts,
 }) => {
   const handleClick = () => {
     handleRateValue(Number(value));

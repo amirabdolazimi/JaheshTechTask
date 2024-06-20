@@ -1,13 +1,15 @@
 import LeftArrowIcon from "../Icons/LeftArrowIcon";
 import RightArrowIcon from "../Icons/RightArrowIcon";
 import classes from "./Pagination.module.css";
-const Pagination = ({
+import { IPagination } from "../../models/interface/interface";
+
+const Pagination: React.FC<IPagination> = ({
   totalPosts,
   postPerPage,
   setCurrentPage,
   currentPage,
 }) => {
-  let pages = [];
+  let pages: number[] = [];
 
   for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
     pages.push(i);
@@ -24,7 +26,11 @@ const Pagination = ({
         <RightArrowIcon />
       </button>
       {pages.map((page, index) => (
-        <button className={`${page === currentPage && classes.active}`} onClick={() => setCurrentPage(page)} key={index}>
+        <button
+          className={`${page === currentPage && classes.active}`}
+          onClick={() => setCurrentPage(page)}
+          key={index}
+        >
           {page}
         </button>
       ))}
