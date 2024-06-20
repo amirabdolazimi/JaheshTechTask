@@ -8,7 +8,6 @@ interface ITabBar extends PropsWithChildren {
   setLayerSelectedTab: Dispatch<SetStateAction<boolean>>;
 }
 
-// TODO : Fix Tabbar UI Bug , When Zoom in and Zoom out
 const TabBar: React.FC<ITabBar> = ({
   layerSelectedTab,
   setLayerSelectedTab,

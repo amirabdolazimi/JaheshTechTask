@@ -9,6 +9,7 @@ const OutlinedStarIcon: React.FC<IOutlinedStarIcon> = ({
   value,
   handleRateValue,
   handleShowModal,
+  setPosts,
 }) => {
   const handleClick = () => {
     handleRateValue(Number(value));

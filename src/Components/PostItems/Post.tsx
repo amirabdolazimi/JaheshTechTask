@@ -11,6 +11,9 @@ const Post = ({
   postDescription,
   postTitle,
   sliderContent,
+  setPosts,
+  posts,
+  id,
 }) => {
   return (
     <article className={classes.post}>
@@ -37,7 +40,7 @@ const Post = ({
         <PostSlider sliderContent={sliderContent} />
       </div>
       <div className={classes.postFooter}>
-        <SubmitRate />
+        <SubmitRate setPosts={setPosts} posts={posts} postId={id} />
       </div>
     </article>
   );

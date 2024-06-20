@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* TODO : Should Rmove */
 }
 .header {
   margin-top: 20px;
