@@ -1,16 +1,7 @@
 import classes from "./EventGrid.module.css";
 import EventStep from "./EventStep";
-
+import { dateFormatter } from "../../utils/utils";
 const EventGrid = () => {
-  const dateFormatter = (dateValue: string) => {
-    return new Date(dateValue).toLocaleDateString("fa-IR", {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-  };
-
   const DUMMY_STEPS = [
     {
       eventTitle: "شروع فراخوان و دریافت پیشنهاد ها ",

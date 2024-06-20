@@ -1,0 +1,80 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.winnerLabel {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding: 2.5px 5px;
+  margin: 20px 0;
+  background-color: #fcd885;
+  color: #b27a12;
+  border: 1px solid #b27a12;
+  border-radius: 16px;
+}
+.winnerLabel span svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.winnerLabel span {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.person {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.person span {
+  padding: 0 7px;
+}
+.person span:nth-child(2) {
+  font-size: 15px;
+  font-weight: 600;
+}
+.person span:last-child {
+  border-right: 1px solid #ccc;
+}
+.person img {
+  padding: 0 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.postTitle h4 {
+  margin: 10px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.postTitle p {
+  width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slider_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.postFooter {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

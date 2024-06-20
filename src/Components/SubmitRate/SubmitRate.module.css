@@ -1,0 +1,33 @@
+.starsModal {
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 1px #090d1608;
+}
+.starsModal svg {
+  margin: 0 3px;
+  background-color: #ffffff;
+}
+
+.postDetailsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.postDetailsBtn svg {
+  margin-right: 7px;
+}
+.rated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.rated svg {
+  margin-left: 6px;
+}
+.rated span {
+  margin-top: 2px;
+}

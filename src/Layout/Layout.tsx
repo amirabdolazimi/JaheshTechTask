@@ -2,9 +2,10 @@ import { useState } from "react";
 import TabBar from "../Components/TabBar/TabBar";
 import classes from "./Layout.module.css";
 import EventDetailsPage from "../Pages/EventDetailsPage/EventDetailsPage";
+import EventSuggestionPage from "../Pages/EventSuggestionPage/EventSuggestionPage";
 
 const Layout = () => {
-  const [layerTabSelected, setLayerTabSelected] = useState<boolean>(false);
+  const [layerTabSelected, setLayerTabSelected] = useState<boolean>(!false);
 
   return (
     <div className={classes.layout}>
@@ -15,7 +16,7 @@ const Layout = () => {
         layerSelectedTab={layerTabSelected}
         setLayerSelectedTab={setLayerTabSelected}
       />
-      {!layerTabSelected && <EventDetailsPage />}
+      {!layerTabSelected ? <EventDetailsPage /> : <EventSuggestionPage />}
     </div>
   );
 };

@@ -63,6 +63,7 @@ const EventDetailsPage = () => {
         </div>
       </section>
       <section className={classes.accordions}>
+        {/* TODO : Write Dummy_Data for Accordions */}
         {/* Accordions */}
         <Accordion />
         <Accordion />

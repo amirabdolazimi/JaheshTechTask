@@ -1,0 +1,10 @@
+.circle {
+  margin: 15px 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.selectedCircle {
+  background-color: gray;
+}
