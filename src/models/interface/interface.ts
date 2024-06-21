@@ -44,6 +44,7 @@ export interface IPostSlider extends PropsWithChildren {
 export interface ISliderIndicator extends PropsWithChildren {
   sliderContent: SliderContentType[];
   sliderIndex: number;
+  setSliderIndex: Dispatch<SetStateAction<number>>;
 }
 export interface ISubmitRate extends PropsWithChildren {
   setPosts: Dispatch<SetStateAction<PostType[]>>;

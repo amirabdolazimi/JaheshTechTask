@@ -4,7 +4,8 @@
   height: 10px;
   background-color: #ccc;
   border-radius: 50%;
+  cursor: pointer;
 }
 .selectedCircle {
-  background-color: gray;
+  background-color: rgb(72, 72, 72);
 }

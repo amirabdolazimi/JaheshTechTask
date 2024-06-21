@@ -19,32 +19,36 @@ const PostSlider: React.FC<IPostSlider> = ({ sliderContent }) => {
   };
 
   return (
-    <div className={classes.slider}>
-      {sliderContent.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`${classes.slide} ${
-            index === sliderIndex ? classes.active : ""
-          }`}
-        >
-          <img src={slide.image} alt={slide.alt} />
+    <>
+      <div className={classes.slider}>
+        {sliderContent.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`${classes.slide} ${
+              index === sliderIndex ? classes.active : ""
+            }`}
+          >
+            <img src={slide.image} alt={slide.alt} />
+          </div>
+        ))}
+
+        <div className={classes.controls}>
+          <button className={classes.prev_btn} onClick={handlePrevClick}>
+            <CarretRightIcon />
+          </button>
+          <button className={classes.next_btn} onClick={handleNextClick}>
+            <CarretLeftIcon />
+          </button>
         </div>
-      ))}
+      </div>
       <div className={classes.indicator}>
         <SliderIndicator
+          setSliderIndex={setSliderIndex}
           sliderContent={sliderContent}
           sliderIndex={sliderIndex}
         />
       </div>
-      <div className={classes.controls}>
-        <button className={classes.prev_btn} onClick={handlePrevClick}>
-          <CarretRightIcon />
-        </button>
-        <button className={classes.next_btn} onClick={handleNextClick}>
-          <CarretLeftIcon />
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

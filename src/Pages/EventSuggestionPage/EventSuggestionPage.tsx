@@ -15,6 +15,9 @@ const EventSuggestionPage = () => {
   const firstPostIndex: number = lastPostIndex - postPerPage;
   const currentPosts: PostType[] = posts.slice(firstPostIndex, lastPostIndex);
 
+  // TODO : Responsive
+  // TODO : CustomSelectBox
+
   return (
     <div className={classes.container}>
       <header className={classes.header}>
@@ -31,12 +34,12 @@ const EventSuggestionPage = () => {
           <h3>فیلتر ها </h3>
         </div>
       </header>
-      <div>
+      <div className={classes.postGrid}>
         {currentPosts.map((post) => (
           <Post {...post} key={post.id} setPosts={setPosts} posts={posts} />
         ))}
       </div>
-      <div>
+      <div className={classes.pagination}>
         {/* Pagination Section */}
         <Pagination
           totalPosts={posts.length}

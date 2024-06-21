@@ -11,6 +11,7 @@ const OutlinedStarIcon: React.FC<IOutlinedStarIcon> = ({
   };
   return (
     <svg
+    style={{backgroundColor:'transparent'}}
       onClick={handleClick}
       values={value}
       width="24"

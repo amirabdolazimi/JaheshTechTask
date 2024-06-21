@@ -31,3 +31,14 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+@media only screen and (min-width: 768px) {
+  .pagination {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .pagination button {
+    padding: 16px 24px;
+  }
+}

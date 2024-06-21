@@ -31,3 +31,10 @@
 .rated span {
   margin-top: 2px;
 }
+.rateSection {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}

@@ -73,8 +73,66 @@
 }
 .postFooter {
   width: 100%;
-  padding: 10px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  border-top: 1px solid #ccc;
+  margin-top: 35px;
+}
+.winnerPost {
+  background: linear-gradient(270deg, #eeebeb 0%, #fdfbca 87.12%);
+}
+
+@media only screen and (min-width: 768px) {
+  .post {
+    padding: 0px 25px;
+    border: 1px solid #090d150d;
+    border-radius: 16px;
+    margin: 25px 0;
+    box-shadow: 0px 1px 10px 6px #1018280d;
+  }
+  .winnerLabel {
+    width: 10%;
+  }
+  .winnerLabel span svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .winnerLabel span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .person {
+    font-size: 16px;
+  }
+  .person span:nth-child(2) {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .person span:last-child {
+    padding: 5px 7px;
+    border-right: 1.5px solid #9a9a9a;
+  }
+  .person img {
+    padding: 0 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  .postTitle h4 {
+    margin: 10px 0;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .postTitle p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 95%;
+    text-wrap: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

@@ -23,7 +23,7 @@ const SubmitRate: React.FC<ISubmitRate> = ({ setPosts, posts, postId }) => {
   }, [rateValue]);
 
   return (
-    <>
+    <div className={classes.rateSection}>
       {showStarModal && (
         <div className={classes.starsModal}>
           <div>
@@ -54,7 +54,7 @@ const SubmitRate: React.FC<ISubmitRate> = ({ setPosts, posts, postId }) => {
         <span>جزئیات</span>
         <LeftArrowIcon />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -17,8 +17,9 @@ const Post: React.FC<IPost> = (props) => {
     posts,
     id,
   } = props;
+
   return (
-    <article className={classes.post}>
+    <article className={`${classes.post} ${isWinner && classes.winnerPost}`}>
       {/* If Winner is => True */}
       {isWinner && (
         <label className={classes.winnerLabel}>

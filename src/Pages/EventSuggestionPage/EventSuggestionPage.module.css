@@ -48,3 +48,20 @@
   align-items: center;
   margin-left: 5px;
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: none;
+  }
+  .container {
+    width: 75%;
+    background-color: #f9fafb;
+  }
+  .postGrid {
+    padding: 15px 60px;
+    border-top: 1px solid #ccc;
+  }
+  .pagination {
+    padding: 30px 60px;
+  }
+}
