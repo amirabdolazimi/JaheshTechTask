@@ -17,8 +17,6 @@ const SubmitRate: React.FC<ISubmitRate> = ({ setPosts, posts, postId }) => {
     earnedStars: rateValue,
   };
   useEffect(() => {
-    console.log(posts);
-
     setPosts(updatedPosts);
   }, [rateValue]);
 
