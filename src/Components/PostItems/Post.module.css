@@ -80,7 +80,7 @@
   margin-top: 35px;
 }
 .winnerPost {
-  background: linear-gradient(270deg, #eeebeb 0%, #fdfbca 87.12%);
+  background: linear-gradient(270deg, #eeebeb 0%, #fffee0 87.12%);
 }
 
 @media only screen and (min-width: 768px) {

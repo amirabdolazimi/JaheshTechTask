@@ -4,7 +4,6 @@ import { IVerticalProgressBar } from "../../models/interface/interface";
 const VerticalProgressBar: React.FC<IVerticalProgressBar> = ({
   stepPassed,
 }) => {
-  console.log(stepPassed);
 
   return (
     <div

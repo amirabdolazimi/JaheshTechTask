@@ -1,0 +1,41 @@
+.selectBox {
+  margin-top: 2rem;
+  width: 25%;
+  display: grid;
+}
+.selectBox label {
+  margin: 10px 0px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.checkBox {
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  background-color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  user-select: none;
+  border-radius: 0.375rem;
+}
+.checkBox input {
+  width: 20px;
+  height: 20px;
+}
+.checkBox div {
+  display: flex;
+  align-items: center;
+}
+.checkBox div span {
+  margin-left: 10px;
+}
+.checkBox div span svg {
+  width: 25px;
+  height: 25px;
+}
+.checkBox div p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}

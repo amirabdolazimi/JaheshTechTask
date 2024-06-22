@@ -3,7 +3,6 @@ import { IHorizontalProgressBar } from "../../models/interface/interface";
 const HorizontalProgressBar: React.FC<IHorizontalProgressBar> = ({
   stepPassed,
 }) => {
-  console.log(stepPassed);
 
   return (
     <div
