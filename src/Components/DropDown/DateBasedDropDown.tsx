@@ -1,34 +1,30 @@
 import { useState } from "react";
 import classes from "./DateBasedDropDown.module.css";
 import CarretRightIcon from "../Icons/CarretRightIcon";
-// TODO:Write Logic for DropDown
+import { DropDownOptionsType } from "../../models/types/types";
 
-type DropDownOptionsType = {
-  label: string;
-  value: string;
-};
 const dateDropDownOptions: DropDownOptionsType[] = [
-  { label: "جدید ترین", value: "new" },
-  { label: "قدیمی ترین", value: "old" },
+  { label: "جدید ترین", value: "ascending" },
+  { label: "قدیمی ترین", value: "descending" },
 ];
 
 const DateBasedDropDown = () => {
   const [dropDownStatus, setDropDownStatus] = useState<boolean>(false);
-  const [selectedValue, setSelectedValue] = useState<string>("جدید ترین");
+  const [selectedLabel, setSelectedLabel] = useState<string>("جدید ترین");
 
   const handleClick = (value: string) => {
     setDropDownStatus((prevState) => !prevState);
-    setSelectedValue(value);
+    setSelectedLabel(value);
   };
 
-  const renderSelectedValue = (value: string) => {
-    switch (value) {
-      case "new":
+  const renderSelectedLabel = (label: string) => {
+    switch (label) {
+      case "ascending":
         return "جدید ترین";
-      case "old":
+      case "descending":
         return "قدیمی ترین ";
       default:
-        return value;
+        return label;
     }
   };
   return (
@@ -40,7 +36,7 @@ const DateBasedDropDown = () => {
         }}
         className={classes.dropDownDefaultValue}
       >
-        <p>{renderSelectedValue(selectedValue)}</p>
+        <p>{renderSelectedLabel(selectedLabel)}</p>
         <span>
           <CarretRightIcon />
         </span>

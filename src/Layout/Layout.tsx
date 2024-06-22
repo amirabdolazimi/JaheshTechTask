@@ -5,8 +5,7 @@ import EventDetailsPage from "../Pages/EventDetailsPage/EventDetailsPage";
 import EventSuggestionPage from "../Pages/EventSuggestionPage/EventSuggestionPage";
 
 const Layout = () => {
-  // TODO:Should be True At Least
-  const [layerTabSelected, setLayerTabSelected] = useState<boolean>(!false);
+  const [layerTabSelected, setLayerTabSelected] = useState<boolean>(false);
 
   return (
     <div className={classes.layout}>

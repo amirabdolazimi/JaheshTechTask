@@ -21,7 +21,7 @@ export interface IPlusIcon extends PropsWithChildren {
   handleClick: Dispatch<SetStateAction<boolean>>;
 }
 export interface IPagination extends PropsWithChildren {
-  totalPosts: number;
+  totalPosts: number | undefined;
   postPerPage: number;
   setCurrentPage: Dispatch<SetStateAction<number>>;
   currentPage: number;
@@ -57,4 +57,10 @@ export interface ITabBar extends PropsWithChildren {
 }
 export interface IVerticalProgressBar extends PropsWithChildren {
   stepPassed: number;
+}
+export interface ISortSelectBox extends PropsWithChildren {
+  onSort: (isChecked: boolean) => void;
+}
+export interface IStarsDropDown extends PropsWithChildren {
+  onFilter: (value: string | number) => void;
 }

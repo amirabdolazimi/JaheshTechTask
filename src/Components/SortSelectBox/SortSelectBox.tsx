@@ -1,22 +1,24 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import classes from "./SortSelectBox.module.css";
 import EducationTrophyIcon from "../Icons/EducationTrophyIcon";
-const SortSelectBox = () => {
+import { ISortSelectBox } from "../../models/interface/interface";
+
+const SortSelectBox: React.FC<ISortSelectBox> = ({ onSort }) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
-  console.log(isChecked);
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+    onSort(isChecked);
+  };
 
   return (
     <div className={classes.selectBox}>
       <label htmlFor="selectBox">فیلتر کردن بر اساس</label>
-      <div
-        className={classes.checkBox}
-        onClick={() => setIsChecked((prevState) => !prevState)}
-      >
+      <div className={classes.checkBox}>
         <input
           type="checkbox"
           id="selectBox"
           checked={isChecked}
-          onChange={(event) => setIsChecked(event.target.checked)}
+          onChange={(event) => handleChange(event)}
         />
         <div>
           <span>

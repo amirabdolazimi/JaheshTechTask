@@ -11,7 +11,6 @@
   cursor: pointer;
 }
 .checkBox {
-  cursor: pointer;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   display: flex;
   background-color: #ffffff;
@@ -22,6 +21,7 @@
 .checkBox input {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .checkBox div {
   display: flex;
@@ -32,6 +32,7 @@
 }
 .checkBox div span svg {
   width: 25px;
+  cursor: auto;
   height: 25px;
 }
 .checkBox div p {

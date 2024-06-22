@@ -12,6 +12,7 @@ export const DUMMY_POST: PostType[] = [
     earnedStars: 0,
     personName: "سمانه احمدی",
     postDate: dateFormatter("2024-02-07"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهاد برای چالش کدنویسی همکاران سیستم",
     postDescription:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
@@ -40,6 +41,7 @@ export const DUMMY_POST: PostType[] = [
     earnedStars: 0,
     personName: "Amir ",
     postDate: dateFormatter("2024-02-08"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهاد برای چالش دوآپس دیجی کالا",
     postDescription:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با تست تست تست از طراحان گرافیک است",
@@ -67,7 +69,8 @@ export const DUMMY_POST: PostType[] = [
     personPicture: pavel,
     earnedStars: 0,
     personName: "Akbar ",
-    postDate: dateFormatter("2024-02-08"),
+    postDate: dateFormatter("2024-02-09"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهاد برای آزمون نهایی دبیرستان",
     postDescription: "تست پیست سوم ",
     sliderContent: [
@@ -94,7 +97,8 @@ export const DUMMY_POST: PostType[] = [
     personPicture: steve,
     earnedStars: 0,
     personName: "Asghar ",
-    postDate: dateFormatter("2024-02-08"),
+    postDate: dateFormatter("2024-02-10"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهاد برای چالش تست تسک جهش",
     postDescription: "این یک متن تست برای تکنیکال تسک جهش است",
     sliderContent: [
@@ -121,7 +125,8 @@ export const DUMMY_POST: PostType[] = [
     personPicture: pavel,
     earnedStars: 0,
     personName: "Hassan ",
-    postDate: dateFormatter("2024-02-08"),
+    postDate: dateFormatter("2024-02-11"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهاد برای چالش 321312321312 همکاران سیستم",
     postDescription:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با 321312312321312321312312312 از طراحان گرافیک است",
@@ -149,7 +154,8 @@ export const DUMMY_POST: PostType[] = [
     personPicture: ilon,
     earnedStars: 0,
     personName: "reza ",
-    postDate: dateFormatter("2024-02-08"),
+    postDate: dateFormatter("2024-02-12"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "پیشنهادی برای این پست ندارم ",
     postDescription: "برای این قسمت پست نیز پیشنهادی ندارم ",
     sliderContent: [
@@ -176,7 +182,8 @@ export const DUMMY_POST: PostType[] = [
     personPicture: pavel,
     earnedStars: 0,
     personName: "حصین رحمتی",
-    postDate: dateFormatter("2024-02-08"),
+    postDate: dateFormatter("2024-02-13"),
+    originalPostDate: new Date("2024-02-08").toLocaleDateString(),
     postTitle: "زندگی نامه حصین رحمتی",
     postDescription: "متولد دوازدهم مرداد 1366 در شهر مشهد میباشد ",
     sliderContent: [

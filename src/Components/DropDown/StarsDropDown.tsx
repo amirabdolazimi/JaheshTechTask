@@ -1,7 +1,10 @@
-import { ReactElement, useState } from "react";
+import { useState } from "react";
 import classes from "./StarsDropDown.module.css";
 import CarretRightIcon from "../Icons/CarretRightIcon";
 import FillStarIcon from "../Icons/FillStarIcon";
+import { IStarsDropDown } from "../../models/interface/interface";
+import { DropDownOptionsType } from "../../models/types/types";
+
 const FiveStar = () => {
   return (
     <div>
@@ -53,30 +56,29 @@ const OneStar = () => {
     </div>
   );
 };
-type DropDownOptionsType = {
-  label: string | ReactElement;
-  value: string;
-};
+
 const starsDropDownOptions: DropDownOptionsType[] = [
   { label: "همه پیشنهاد ها", value: "All" },
-  { label: <FiveStar />, value: "5" },
-  { label: <FourStar />, value: "4" },
-  { label: <ThreeStar />, value: "3" },
-  { label: <TwoStar />, value: "2" },
-  { label: <OneStar />, value: "1" },
-  { label: "بدون ستاره", value: "0" },
+  { label: <FiveStar />, value: 5 },
+  { label: <FourStar />, value: 4 },
+  { label: <ThreeStar />, value: 3 },
+  { label: <TwoStar />, value: 2 },
+  { label: <OneStar />, value: 1 },
+  { label: "بدون ستاره", value: 0 },
 ];
-const StarsDropDown = () => {
+
+const StarsDropDown: React.FC<IStarsDropDown> = ({ onFilter }) => {
   const [dropDownStatus, setDropDownStatus] = useState<boolean>(false);
-  const [selectedValue, setSelectedValue] = useState<string>("همه پیشنهاد ها");
-  // TODO:Write Logic for DropDown
+  const [selectedValue, setSelectedValue] = useState<string | number>(
+    "همه پیشنهاد ها"
+  );
 
-
-  const handleClick = (value: string) => {
+  const handleClick = (value: string | number) => {
     setDropDownStatus((prevState) => !prevState);
     setSelectedValue(value);
+    onFilter(value);
   };
-  const renderSelectedValue = (value: string) => {
+  const renderSelectedValue = (value: string | number) => {
     switch (value) {
       case "0":
         return "بدون ستاره";
